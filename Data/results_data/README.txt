@@ -1,0 +1,1 @@
+Kickoff times for results data are given in the local timezone time, GMT and BST.
