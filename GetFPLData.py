@@ -106,7 +106,6 @@ def get_fpl_data(start_season, end_season, data_dir):
     seasons = [str(y1) + "-" + str(y1 + 1)[2:4] for y1 in range(year_start, year_end)]
     
     for season in seasons:
-        print(season)
         season_y1 = season[2:4]
         
         # Access the names of the players playing in the given season
