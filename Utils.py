@@ -38,7 +38,11 @@ def gof_plots(response, residuals, fitted_values):
     ax3.set_title("Fitted values vs response")
     plt.show()
     
-def split(a, n):
+def split(a, n, shuffle=False):
     k = len(a) // n
     q = len(a) % n
+    
+    if shuffle:
+        a = np.random.permutation(a)
+    
     return [a[(i*k + min(i, q)):(i+1)*k + 1 + min(i, q-1)] for i in range(n)]
